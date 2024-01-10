@@ -1,31 +1,39 @@
-Ethereum Wallet Creation and Encryption
-This Python script (walletCreation.py) demonstrates the creation of an Ethereum wallet and the encryption of its private key using the eth_account library. It generates a random Ethereum account, creates a password for encryption, and then encrypts the private key. Additionally, it provides a decryption function to retrieve the original private key.
+# Ethereum Wallet Creation and Encryption
 
-Prerequisites
+This Python script (`walletCreation.py`) demonstrates the creation of an Ethereum wallet and the encryption of its private key using the `eth_account` library. It generates a random Ethereum account, creates a password for encryption, and then encrypts the private key. Additionally, it provides a decryption function to retrieve the original private key.
+
+## Prerequisites
+
 Make sure you have Python installed on your system. You can install the required dependencies using the following command:
-
-bash
+```bash
 pip install eth_account
-How to Use
-1- Clone this repository to your local machine
+```
 
-bash
+## How to Use?
+Clone this repository to your local machine:
+```bash
+git clone https://github.com/Alberto200420/createEthereumWallet
+```
+## Navigate to the project directory:
+```bash
 cd createEthereumWallet
-Run the Python script:
+```
+## Run the Python script:
 
-bash
+```bash
 python walletCreation.py
-Output
+```
+## Output
 Upon running the script, you will see output similar to the following:
 
-bash
-CREANDO LA CUENTA DE Ethereum Y ENCRIPTANDOLA
+```bash
+CREATING Ethereum WALLET AND ENCRYPTING IT
 
-cuenta de ethereum: 0x1EE6BDE51AA7e4822b7194686Ee0EED3591bF251
+Ethereum account: 0x1EE6BDE51AA7e4822b7194686Ee0EED3591bF251
 
-contraseña para encryiptar: enYTaKGg7a0jo40v69iy
+Encryption password: enYTaKGg7a0jo40v69iy
 
-Clave privada: 0x75ccdab6a75e327ce5f060157d5e1da80a024bbf1e7a6234287e77b80a24f7c1
+Private key: 0x75ccdab6a75e327ce5f060157d5e1da80a024bbf1e7a6234287e77b80a24f7c1
 
 {
  'address': '1EE6BDE51AA7e4822b7194686Ee0EED3591bF251',
@@ -39,12 +47,12 @@ Clave privada: 0x75ccdab6a75e327ce5f060157d5e1da80a024bbf1e7a6234287e77b80a24f7c
  'id': '30cab0d3-71cb-4bd3-b364-13fc45b9410c',
  'version': 3
 }
-Clave privada encriptada (objeto): None
+Encrypted private key (object): None
 
-DESENCRIPTANDO LA INFORMACION CON EL OBJETO Y LA CONTRASEÑA
+DECRYPTING INFORMATION WITH THE OBJECT AND PASSWORD
 
-CLAVE DESENCRIPTADA, ESTA ES LA LLAVE PIRVADA: 0x75ccdab6a75e327ce5f060157d5e1da80a024bbf1e7a6234287e77b80a24f7c1
+DECRYPTED PRIVATE KEY: 0x75ccdab6a75e327ce5f060157d5e1da80a024bbf1e7a6234287e77b80a24f7c1
+```
+
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
-
-Feel free to customize this README.md according to your project's needs. Add information such as installation steps, usage instructions, and any other relevant details.
